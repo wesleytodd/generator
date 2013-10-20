@@ -310,6 +310,10 @@ describe('yeoman.generators.Base', function () {
     it('should check for conflict if directory already exists', function (done) {
       this.dummy.bulkDirectory('bulk-operation', 'bulk-operation');
       this.dummy.conflicter.resolve(done);
+      process.nextTick(function () {
+        process.stdin.emit('keypress', 'y');
+        process.stdin.emit('keypress', '\n', {name:'line'});
+      });
     });
   });
 

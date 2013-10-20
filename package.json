@@ -52,6 +52,9 @@
     "markdox": "~0.1.2",
     "coveralls": "~2.3.0",
     "mocha-lcov-reporter": "0.0.1",
-    "istanbul": "~0.1.44"
+    "istanbul": "~0.1.44",
+    "grunt": "~0.4.1",
+    "grunt-mocha-cov": "0.0.7",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }
